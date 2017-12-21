@@ -6,6 +6,7 @@
     "outDir": "build",
     "jsx": "react",
     "sourceMap": true,
+    "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

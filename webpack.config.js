@@ -2,8 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: [path.join(process.cwd(), 'app/app.ts')],
+  entry: [path.join(process.cwd(), 'app/app.tsx')],
   devtool: "source-map",
+  
   output: {
     path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
@@ -32,8 +33,9 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['.ts', '.tsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
+
   module: {
     loaders: [
       {

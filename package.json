@@ -1,0 +1,20 @@
+{
+  "name": "react-with-typescript",
+  "version": "0.0.1",
+  "description": "Setting up a react project written in typescript and tested with jest",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipemoreira/react-with-typescript.git"
+  },
+  "keywords": [
+    "react",
+    "jest",
+    "typesript"
+  ],
+  "author": "Phillipe Moreira (phillipealexmoreira@gmail.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/phillipemoreira/react-with-typescript#readme"
+}

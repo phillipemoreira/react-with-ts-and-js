@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Setting up a react project written in typescript and tested with jest",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest --config jest.config.json --coverage"
   },
   "repository": {
     "type": "git",

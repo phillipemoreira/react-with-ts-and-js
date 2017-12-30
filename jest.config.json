@@ -6,6 +6,14 @@
     ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
   },
   "mapCoverage": true,
+  "coverageThreshold": {
+      "global": {
+          "statements": 100,
+          "branches": 100,
+          "functions": 100,
+          "lines": 100
+      }
+  },
   "testPathIgnorePatterns": [
     "/node_modules/",
     "/build/"
@@ -18,6 +26,7 @@
     "json"
   ],
   "collectCoverageFrom": [
-    "app/**/*.{js,jsx,ts,tsx}"
+    "app/**/*.{js,jsx,ts,tsx}",
+    "!app/app.tsx"
   ]
 }

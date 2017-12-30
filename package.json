@@ -4,7 +4,8 @@
   "description": "Setting up a react project written in typescript and tested with jest",
   "scripts": {
     "test": "jest --config jest.config.json --coverage",
-    "test:watch": "jest --config jest.config.json --watch"
+    "test:watch": "jest --config jest.config.json --watch",
+    "build": "npm run test && webpack --progress"
   },
   "repository": {
     "type": "git",

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "NODE_ENV=test jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
-    "build": "npm run test && webpack --progress"
+    "build": "NODE_ENV=production npm run test && webpack --progress"
   },
   "repository": {
     "type": "git",

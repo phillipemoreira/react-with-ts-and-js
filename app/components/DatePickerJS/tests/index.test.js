@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { shallow } from "enzyme";
 
 import MuiDatePicker from 'material-ui/DatePicker';

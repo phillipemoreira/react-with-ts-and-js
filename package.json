@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "Setting up a react project written in typescript and tested with jest",
   "scripts": {
-    "test": "jest --config jest.config.json --coverage"
+    "test": "jest --config jest.config.json --coverage",
+    "test:watch": "jest --config jest.config.json --watch",
+    "build": "npm run test && webpack --progress"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,14 @@
   "license": "MIT",
   "homepage": "https://github.com/phillipemoreira/react-with-typescript#readme",
   "devDependencies": {
+    "@types/enzyme": "^3.1.6",
     "@types/jest": "^21.1.9",
     "@types/material-ui": "^0.20.0",
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
     "@types/react-test-renderer": "^16.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.3",

@@ -27,6 +27,6 @@
   ],
   "collectCoverageFrom": [
     "app/**/*.{js,jsx,ts,tsx}",
-    "!app/app.tsx"
+    "!app/app.js"
   ]
 }

@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: [path.join(process.cwd(), 'app/app.tsx')],
+  entry: [path.join(process.cwd(), 'app/app.js')],
   devtool: "source-map",
   
   output: {
@@ -39,11 +39,17 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /.js?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },{
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/ 
-      },
-      {
+      },{
         test: /\.html$/,
         loader: 'html-loader'
       },

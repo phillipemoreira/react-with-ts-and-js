@@ -2,7 +2,8 @@
   "setupFiles": [
     "<rootDir>/test-setup.js"
   ],
-  "transform": {
+    "transform": {
+    ".(js|jsx)": "<rootDir>/es6-preprocessor.js",
     ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
   },
   "mapCoverage": true,

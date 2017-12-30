@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Setting up a react project written in typescript and tested with jest",
   "scripts": {
-    "test": "jest --config jest.config.json --coverage",
+    "test": "NODE_ENV=test jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
     "build": "npm run test && webpack --progress"
   },
@@ -26,6 +26,9 @@
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
     "@types/react-test-renderer": "^16.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "html-loader": "^0.5.1",

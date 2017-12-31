@@ -5,7 +5,8 @@
   "scripts": {
     "test": "NODE_ENV=test jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
-    "build": "NODE_ENV=production npm run test && webpack --progress"
+    "build": "NODE_ENV=production npm run lint && npm run test && webpack --progress",
+    "lint": "eslint app --fix"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
     "@types/react-test-renderer": "^16.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
@@ -38,6 +42,12 @@
     "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.3",

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 import DatePicker from 'material-ui/DatePicker';
 
 const DatePickerExampleSimple = () => (

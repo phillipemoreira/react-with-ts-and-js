@@ -9,10 +9,10 @@
   "mapCoverage": true,
   "coverageThreshold": {
       "global": {
-          "statements": 90,
+          "statements": 80,
           "branches": 70,
-          "functions": 98,
-          "lines": 98
+          "functions": 80,
+          "lines": 70
       }
   },
   "testPathIgnorePatterns": [

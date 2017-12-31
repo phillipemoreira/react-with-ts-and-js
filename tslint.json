@@ -1,9 +1,40 @@
 {
     "defaultSeverity": "error",
     "extends": [
-        "tslint:recommended"
+        "tslint:recommended",
+        "tslint-react"
     ],
     "rules": {
-        "eofline": true
+        "eofline": true,
+        "indent": [true, "spaces", 2],
+        "quotemark": [true, "single", "jsx-double", "avoid-template", "avoid-escape"],
+        "newline-before-return": true,
+        "no-consecutive-blank-lines": true,
+        "no-irregular-whitespace": true,
+        "only-arrow-functions": [true],
+        "no-unused-expression": true,
+        "no-unused-variable": true,
+        "no-unnecessary-callback-wrapper": true,
+        "no-unnecessary-initializer": true,
+        "object-literal-shorthand": true,
+        "prefer-function-over-method": true,
+        "semicolon": [true, "always"],
+        "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+        "prefer-const": true,
+        "linebreak-style": [true, "LF"],
+        "cyclomatic-complexity": [true, 10],
+        "arrow-return-shorthand": [true, "multiline"],
+        "max-line-length": [true, 120],
+        "max-file-line-count": [true, 300],
+        "max-classes-per-file": [true, 1],
+        "no-duplicate-imports": true,
+        "jsx-alignment": true,
+        "jsx-boolean-value": [true, "never"],
+        "jsx-curly-spacing": [true, "never"],
+        "jsx-equals-spacing": [true, "never"],
+        "jsx-key": true,
+        "jsx-no-bind": true,
+        "jsx-self-close": true,
+        "jsx-wrap-multiline": true
     }
 }

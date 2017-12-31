@@ -6,7 +6,9 @@
     "test": "NODE_ENV=test jest --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
     "build": "NODE_ENV=production npm run lint && npm run test && webpack --progress",
-    "lint": "eslint app --fix"
+    "lint": "npm run eslint && npm run tslint",
+    "eslint": "eslint app --fix",
+    "tslint": "tslint app/**/*.ts* --fix"
   },
   "repository": {
     "type": "git",
@@ -54,6 +56,7 @@
     "react-test-renderer": "^16.2.0",
     "ts-jest": "^22.0.0",
     "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
     "typescript": "^2.6.2",
     "webpack": "^3.10.0"
   },

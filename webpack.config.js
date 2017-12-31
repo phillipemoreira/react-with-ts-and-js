@@ -3,13 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [path.join(process.cwd(), 'app/app.js')],
-  devtool: "source-map",
-  
+  devtool: 'source-map',
   output: {
     path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
     filename: '[name].[chunkhash].js',
-    chunkFilename: '[name].[chunkhash].chunk.js'
+    chunkFilename: '[name].[chunkhash].chunk.js',
   },
 
   plugins: [
@@ -26,9 +25,9 @@ module.exports = {
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true
+        minifyURLs: true,
       },
-      inject: true
+      inject: true,
     }),
   ],
 
@@ -43,17 +42,17 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react']
-        }
-      },{
+          presets: ['es2015', 'react'],
+        },
+      }, {
         test: /\.tsx?$/,
         loader: 'ts-loader',
-        exclude: /node_modules/ 
-      },{
+        exclude: /node_modules/,
+      }, {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
       },
-    ]
+    ],
   },
   target: 'web', // Make web variables accessible to webpack, e.g. window
 };

@@ -65,6 +65,7 @@ Jest allows us to define a code coverage threshold, the build will fail if they 
         "lines": INCREASE_ME
     }
 },
+```
 
 ### Where is it setup?
 [jest.config.json](https://github.com/phillipemoreira/react-with-ts-and-js/blob/master/jest.config.json)

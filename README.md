@@ -6,6 +6,11 @@ I am currently working on a few react projects written in javascript only. My te
 perhaps migrate to typescript, but since the code is already in production and contain tens of thousands of lines, it
 would be unsiwise to try and switch everything at once.
 
+## Prerequisites
+* node and npm
+
+As fars as I know, it should work with any node/npm combination, but I am using node *6.11.3* and npm *3.10.10*. 
+
 ## Running the project
 ```
 npm install;
@@ -29,6 +34,8 @@ others defined in [.eslintrc](https://github.com/phillipemoreira/react-with-ts-a
 
 That being said, if you are using [vscode](https://code.visualstudio.com/) (which I strongly recommend you to do), you get static validations for both es6 and typescript if by install the **extensions** [ESLint](https://github.com/Microsoft/vscode-eslint) and [TSLint](https://github.com/Microsoft/vscode-tslint).
 
+![Linting](documentation/tslint.png)
+
 PS: Some TSLint rules require the compiler type checker, so they will not show in the editor, but they will fail during npm lint script.
 
 ### Where is it setup?
@@ -41,8 +48,31 @@ a third party packaged called [ts-jest](https://github.com/kulshekhar/ts-jest) a
 PS: Notice that we wouldn't have to explicitly define the es6-preprocessor if we weren't working with the typescript preprocessor as well.
 
 ### Coverage
-By running `npm run build` or simply `npm run test` you get a coverage report in `coverage/lcov-report/index.html`, check it out, there is
-also a coverage threshold.
+By running `npm run build` or simply `npm run test` you get a coverage report in:
+
+```
+|---coverage
+|------lcov-report
+|---------index.html
+```
+
+And it looks like this:
+
+![Coverage report](documentation/coverage.png)
+
+#### Coverage threshold
+Jest allows us to define a code coverage threshold, the build will fail if they are not met.
+
+```
+"coverageThreshold": {
+    "global": {
+        "statements": INCREASE_ME,
+        "branches": INCREASE_ME,
+        "functions": INCREASE_ME,
+        "lines": INCREASE_ME
+    }
+},
+```
 
 ### Where is it setup?
 [jest.config.json](https://github.com/phillipemoreira/react-with-ts-and-js/blob/master/jest.config.json)

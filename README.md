@@ -6,6 +6,11 @@ I am currently working on a few react projects written in javascript only. My te
 perhaps migrate to typescript, but since the code is already in production and contain tens of thousands of lines, it
 would be unsiwise to try and switch everything at once.
 
+## Prerequisites
+* node and npm
+
+As fars as I know, it should work with any node/npm combination, but I am using node *6.11.3* and npm *3.10.10*. 
+
 ## Running the project
 ```
 npm install;
@@ -50,6 +55,8 @@ By running `npm run build` or simply `npm run test` you get a coverage report in
 |------lcov-report
 |---------index.html
 ```
+
+And it looks like this:
 
 ![Coverage report](documentation/coverage.png)
 

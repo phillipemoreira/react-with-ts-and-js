@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(process.cwd(), 'build'),
     publicPath: '/',
+    // Using content hash for naming the chunks so they can be easily cached.
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].chunk.js',
   },
@@ -27,6 +28,7 @@ module.exports = {
         minifyCSS: true,
         minifyURLs: true,
       },
+      // Dinamically injecting a script tag referencing the bundled js chunk.
       inject: true,
     }),
   ],
@@ -38,6 +40,7 @@ module.exports = {
   module: {
     loaders: [
       {
+        // Transpiling es6 into es2015 using babel via babel-loader webpack loader.
         test: /.js?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
@@ -45,6 +48,7 @@ module.exports = {
           presets: ['es2015', 'react'],
         },
       }, {
+        // Transpiling typescript into es2015 using typescript compiler via ts-loader webpack loader.
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,

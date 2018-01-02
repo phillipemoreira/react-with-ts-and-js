@@ -2,12 +2,18 @@ import React from 'react';
 
 import DatePicker from '../DatePicker/index.tsx';
 import DatePickerJS from '../DatePickerJS/index';
+import Wrapper from './Wrapper';
+import Messages from './Messages';
 
 const App = () => (
-  <div>
+  <Wrapper>
+    <h1>{Messages.title}</h1>
+    <p>{Messages.description}</p>
     <DatePicker />
     <DatePickerJS />
-  </div>
+    <hr />
+    <p>Written by phillipemoreira</p>
+  </Wrapper>
 );
 
 export default App;

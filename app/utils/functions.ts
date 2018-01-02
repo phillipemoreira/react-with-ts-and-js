@@ -5,5 +5,12 @@ sum(2, 3);
 
 // void
 /* tslint:disable */
-export const sayHello = (n1: number, n2: number): void => console.log('Hello');
+export const sayHello = (): void => console.log('Hello');
 /* tslint:enable */
+sayHello();
+
+// function types
+let mySum: (a: number, b: number) => number;
+mySum = sum;
+// mySum = () => 'foo';
+mySum(2, 4);

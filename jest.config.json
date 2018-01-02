@@ -29,7 +29,9 @@
   "collectCoverageFrom": [
     "app/**/*.{js,jsx,ts,tsx}",
     "!app/app.js",
-    "!app/utils/primitive-types.ts",
-    "!app/utils/objects.ts"
+    "!app/ts-types/primitive-types.ts",
+    "!app/ts-types/objects.ts",
+    "!app/ts-types/union.ts",
+    "!app/ts-types/nulls.ts"
   ]
 }

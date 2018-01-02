@@ -4,7 +4,7 @@
   "description": "Setting up a react project written in typescript + es6 and tested with jest",
   "scripts": {
     "pretest": "rimraf ./coverage",
-    "test": "NODE_ENV=test jest --config jest.config.json --coverage",
+    "test": "NODE_ENV=test jest --no-cache --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
     "build": "NODE_ENV=production npm run lint && npm run test && webpack --progress",
     "lint": "npm run eslint && npm run tslint",

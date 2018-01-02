@@ -4,6 +4,7 @@ const Messages = {
     'Duis ac leo a augue venenatis ullamcorper. Cras ut dignissim ex, vitae imperdiet elit. In tempus faucibus.' +
     'Aliquam tristique diam sed interdum aliquet. Morbi ex dolor, pulvinar vel augue quis, molestie facilisis est.' +
     'Pellentesque ut neque quis tellus sodales ultrices. Donec tincidunt consequat sem, vel sagittis nisi gravida ac.',
+  footer: 'Written by phillipemoreira',
 };
 
 export default Messages;

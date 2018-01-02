@@ -9,10 +9,12 @@ const App = () => (
   <Wrapper>
     <h1>{Messages.title}</h1>
     <p>{Messages.description}</p>
+
     <DatePicker />
     <DatePickerJS />
+
     <hr />
-    <p>Written by phillipemoreira</p>
+    <p>{Messages.footer}</p>
   </Wrapper>
 );
 

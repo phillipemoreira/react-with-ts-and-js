@@ -28,6 +28,10 @@
   ],
   "collectCoverageFrom": [
     "app/**/*.{js,jsx,ts,tsx}",
-    "!app/app.js"
+    "!app/app.js",
+    "!app/ts-types-samples/primitive-types.ts",
+    "!app/ts-types-samples/objects.ts",
+    "!app/ts-types-samples/union.ts",
+    "!app/ts-types-samples/nulls.ts"
   ]
 }

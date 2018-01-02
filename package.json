@@ -6,7 +6,7 @@
     "pretest": "rimraf ./coverage",
     "test": "NODE_ENV=test jest --no-cache --config jest.config.json --coverage",
     "test:watch": "jest --config jest.config.json --watch",
-    "build": "NODE_ENV=production npm run lint && npm run test && webpack --progress",
+    "build": "NODE_ENV=production rimraf ./build && npm run lint && npm run test && webpack --progress",
     "lint": "npm run eslint && npm run tslint",
     "eslint": "eslint app --fix",
     "tslint": "tslint --project tsconfig.json --config tslint.json app/**/*.ts* --fix",

@@ -1,4 +1,4 @@
-import sum from '../Sum';
+import { sum } from '../functions';
 
 describe('Sum', () => {
   it('should sum two numbers', () => {

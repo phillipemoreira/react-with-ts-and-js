@@ -3,8 +3,8 @@
     "<rootDir>/test-setup.js"
   ],
     "transform": {
-    ".(js|jsx)": "<rootDir>/es6-preprocessor.js",
-    ".(ts|tsx)": "<rootDir>/ts-preprocessor.js"
+    ".(js|jsx)": "<rootDir>/test-preprocessors/es6.js",
+    ".(ts|tsx)": "<rootDir>/test-preprocessors/typescript.js"
   },
   "mapCoverage": true,
   "coverageThreshold": {

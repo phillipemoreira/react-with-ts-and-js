@@ -60,7 +60,6 @@
     "minimist": "^1.2.0",
     "prop-types": "^15.6.0",
     "react-test-renderer": "^16.2.0",
-    "ts-jest": "^22.0.0",
     "ts-loader": "^3.2.0",
     "tslint": "^5.8.0",
     "tslint-config-airbnb": "^5.4.2",

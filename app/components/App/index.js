@@ -2,7 +2,7 @@ import React from 'react';
 
 import DatePicker from '../DatePicker/index.tsx';
 import DatePickerJS from '../DatePickerJS/index';
-import Wrapper from './Wrapper';
+import Wrapper from './Wrapper.tsx';
 import Messages from './Messages';
 
 const App = () => (

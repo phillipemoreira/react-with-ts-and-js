@@ -1,11 +1,11 @@
 
 import * as React from 'react';
 
-// type FlexDirection = 'column';
+// For some reason I cannot specify flexDirection without an explicit casting.
+// display: 'flex',
+// flexDirection: 'column' as FlexDirection,
 
 const WrapperStyle = {
-  display: 'flex',
-  // flexDirection: 'column' as FlexDirection,
   margin: '0 auto',
   maxWidth: 'calc(768px + 16px * 2)',
   minHeight: '100%',

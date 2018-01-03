@@ -1,22 +1,16 @@
 
 import * as React from 'react';
 
-// For some reason I cannot specify flexDirection without an explicit casting.
-// display: 'flex',
-// flexDirection: 'column' as FlexDirection,
-
-const WrapperStyle = {
+const WrapperStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
   margin: '0 auto',
   maxWidth: 'calc(768px + 16px * 2)',
   minHeight: '100%',
   padding: '0 16px',
 };
 
-interface IProps {
-  children: object | object[];
-}
-
-const Wrapper = (props: IProps) => (
+const Wrapper = (props: React.Props<object>) => (
   <div style={WrapperStyle}>
     {props.children}
   </div>
